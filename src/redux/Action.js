@@ -20,7 +20,7 @@ export const captial = (url) => {
     dispatch({ type: actions.GET_CW_REQUEST });
     try {
       const res = await GET_API(url);
-      console.log(res);
+
       const {
         temperature,
         weather_icons,
@@ -28,7 +28,7 @@ export const captial = (url) => {
         precip,
       } = res.data.current;
       const data = { temperature, weather_icons, wind_speed, precip };
-      console.log(data);
+
       dispatch({ type: actions.GET_CW_SUCCESS, payload: data });
     } catch (e) {
       dispatch({ type: actions.GET_CW_FAILURE, error: e });

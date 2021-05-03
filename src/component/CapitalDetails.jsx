@@ -57,7 +57,6 @@ export default function CapitalDetails() {
       );
     }
   };
-  console.log("-------------", state.getCountryData.capital);
-  console.log("getcapitals-----------", getCapitalData);
+
   return <div>{render()}</div>;
 }

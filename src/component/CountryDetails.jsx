@@ -61,7 +61,5 @@ export default function CountryDetails() {
     }
   };
 
-  //console.log("getCountryData---------------------", getCountryData);
-
   return <div>{render()}</div>;
 }
